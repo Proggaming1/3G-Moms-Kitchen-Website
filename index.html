@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3G Moms Kitchen - Premium Traditional Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="Logo 3G Mom's Kitchen.jpeg" alt="3G Moms Kitchen" width="50px" height="50px">
+                <span>3G Moms Kitchen</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Pengalaman Kuliner Mewah</h1>
+            <p>Nikmati cita rasa autentik dengan sentuhan premium modern</p>
+            <button class="btn btn-primary">Jelajahi Menu</button>
+        </div>
+        <div class="hero-gradient"></div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <div class="container">
+            <div class="welcome-content">
+                <div class="welcome-text">
+                    <h2>Selamat Datang</h2>
+                    <p>Kami menghadirkan pengalaman bersantap yang tak terlupakan dengan hidangan pilihan dan layanan terbaik. Setiap masakan dirancang dengan cermat oleh chef berpengalaman untuk memberikan kepuasan maksimal.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <h3>Premium Quality</h3>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <h3>Bahan Segar</h3>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <h3>Pelayanan Terbaik</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="welcome-image">
+                    <div class="image-placeholder">
+                        <img src="Sosis solo banner.jpeg" alt="Welcome Image" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Menu Spesial</h2>
+            
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="semua">Semua</button>
+                <button class="filter-btn" data-filter="appetizer">Makanan Ringan</button>
+                <button class="filter-btn" data-filter="main">Makanan Berat</button>
+                <button class="filter-btn" data-filter="dessert">Minuman</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Appetizer -->
+                <div class="menu-card" data-category="Makanan Ringan">
+                    <div class="card-image">
+                        <div class="image-box">
+                            <img src="Gambar piscok goreng .jpeg" alt="Sosis Solo Goreng" width="fit-content" height="250px">
+                        </div>
+                        <span class="price">Rp 2.500</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Piscok Goreng</h3>
+                        <p>Pisang Cokelat yang digoreng dengan minyak sehat dan buah alami</p>
+                        <button class="btn-order" onclick="orderNow('Piscok Goreng')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="appetizer">
+                    <div class="card-image">
+                        <div class="image-box">
+                            <img src="Sosis solo goreng.jpeg" alt="Sosis Solo Goreng" width="fit-content" height="200px">
+                        </div>
+                        <span class="price">Rp 4.500</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Sosis Solo Goreng</h3>
+                        <p>Sosis solo yang digoreng dengan bumbu rempah alami</p>
+                        <button class="btn-order" onclick="orderNow('Sosis Solo Goreng')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Main Course -->
+                <div class="menu-card" data-category="Makanan Ringan">
+                    <div class="card-image">
+                        <div class="image-box">
+                            <img src="Frozen Piscok.jpeg" alt="Piscok Frozen" width="fit-content" height="400px">
+                        </div>
+                        <span class="price">Rp 2.500</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Piscok Frozen</h3>
+                        <p>Pisang Cokelat yang siap di goreng kapan pun.</p>
+                        <button class="btn-order" onclick="orderNow('Piscok Frozen')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="Makanan Ringan">
+                    <div class="card-image">
+                        <div class="image-box">
+                            <img src="Sosis solo frozen.jpeg" alt="Sosis Solo Frozen" width="fit-content" height="200px">
+                        </div>
+                        <span class="price">Rp 4.500</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Sosis Solo Frozen</h3>
+                        <p>Sosis solo yang dibekukan dan siap digoreng kapan pun.</p>
+                        <button class="btn-order" onclick="orderNow('Sosis Solo Frozen')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Kami</h2>
+            <div class="about-grid">
+                <div class="about-box">
+                    <i class="fas fa-crown"></i>
+                    <h3>Kualitas Premium</h3>
+                    <p>Kami hanya menggunakan bahan-bahan berkualitas terbaik yang dipilih langsung dari sumber terpercaya</p>
+                </div>
+                <div class="about-box">
+                    <i class="fas fa-user-chef"></i>
+                    <h3>Chef Berpengalaman</h3>
+                    <p>Tim chef kami memiliki pengalaman internasional dan berdedikasi menciptakan cita rasa istimewa</p>
+                </div>
+                <div class="about-box">
+                    <i class="fas fa-heart"></i>
+                    <h3>Passion & Dedikasi</h3>
+                    <p>Setiap hidangan dibuat dengan cinta dan perhatian terhadap detail untuk kepuasan Anda</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Alamat</h3>
+                    <p>Jl. Gastronomi No. 123<br>Jakarta Pusat 12345</p>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-phone"></i>
+                    <h3>Telepon</h3>
+                    <p>+62 812-3456-7890<br>+62 21-5678-1234</p>
+                </div>
+                <div class="contact-info">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p><a href="https://wa.me/6282338516014" target="_blank">Chat di WhatsApp</a></p>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-clock"></i>
+                    <h3>Jam Operasional</h3>
+                    <p>Sen-Jum: 11:00 - 23:00<br>Sab-Min: 10:00 - 00:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>3G Moms Kitchen</h3>
+                    <p>Pengalaman kuliner premium untuk momen istimewa Anda</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="#menu">Menu Spesial</a></li>
+                        <li><a href="#tentang">Tentang Kami</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-links">
+                        <!-- GANTI DENGAN URL INSTAGRAM ANDA -->
+                        <a href="https://www.instagram.com/3gmomskitchen?igsh=OGptbHY3d2pqN3pk" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/1Zjbq8gyhx/" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://whatsapp.com/channel/0029Vb7U3wx1CYoJW4qzQU26" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://t.me/+-EFHkv7nc8g3ZTBl" target="_blank" title="TikTok"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 3G Moms Kitchen. Semua hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
